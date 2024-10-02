@@ -1,0 +1,309 @@
+/*CSS GENERAL*/
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 6.25rem;
+    position: fixed;
+    z-index: 100;
+    background-color: #0A0A0A;
+    top: 0;
+    left: 0;
+}
+
+.contenedor-header{
+    
+}
+
+.header-titulo{
+    
+}
+
+.header-titulo h1{
+    color: #8DBCB6;
+}
+
+.header-busqueda{
+    
+}
+
+.nav{
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    left: 0;
+    background-color: #0A0A0A;
+}
+
+.nav a{
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.nav a::after{
+    
+}
+
+.nav a::after:hover{
+    
+}
+
+.contenedor-general{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: calc(100% - 100px);
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    
+}
+
+.gradiente-footer{
+    
+}
+
+.contenedor-footer{
+    font-size: 1.5rem;
+}
+
+.redes-sociales{
+}
+
+.facebook{
+    width: 25px;
+    
+}
+
+.instagram{
+    
+}
+
+.horarios{
+    
+}
+
+
+
+
+/* CSS INICIO */
+
+.contenedor-index{
+    width: 100%;
+}
+
+.imagen-index img{
+    
+}
+
+.contenido-index{
+    width: 100%;
+}
+
+.bloques-index{
+    background-color: #8DBCB6;
+}
+
+.bloques-index h2{
+    font-size: 40px;
+}
+
+.bloques-index p{
+    font-size: 1.1rem;
+}
+
+
+
+/* CSS PRODUCTOS */
+
+.contenedor-productos{
+    position: relative;
+}
+
+.productos{
+    
+}
+
+.productos img{
+    
+}
+
+.contenido-productos{
+    
+}
+
+.opacidad{
+    
+}
+
+.contenedor-parrafo{
+    
+    
+}
+
+.parrafo{
+    
+}
+
+
+
+/* CSS SERVICIOS */
+
+.contenedor-servicios{
+    
+}
+
+.card{
+    background-color: #8DBCB6; 
+    
+}
+
+.card img{
+    display: block;
+    width: 100%;
+}
+
+.card p{
+    text-align: center;
+}
+
+.parrafo-servicios{
+    
+}
+
+
+/* CSS RESERVAR */
+
+.contenedor-reservar{
+    
+}
+
+.formulario-reservar{
+    
+}
+
+.formulario-reservar label{
+    
+}
+
+.formulario-reservar input{
+    
+}
+
+.formulario-reservar select{
+    
+}
+
+.formulario-reservar select:focus{
+    
+}
+
+.input-txt{
+    
+}
+
+.input-txt a{
+    
+}
+
+.btn{
+    
+}
+
+.btn:hover{
+    
+}
+
+/* CSS CONTACTO*/
+
+.contenedor-contacto-ayuda{
+    
+}
+
+.contendor-contacto{
+    
+}
+
+.formulario-contacto{
+    
+}
+
+.formulario-contacto label{
+    
+}
+
+.formulario-contacto input{
+    
+}
+
+.formulario-contacto input:focus{
+    
+}
+
+.formulario-contacto select{
+    
+}
+
+.formulario-contacto select:focus{
+    
+}
+
+.formulario-contacto textarea{
+    
+}
+
+.formulario-contacto textarea:focus{
+    
+}
+
+.btn{
+    
+}
+
+.btn:hover{
+    
+}
+
+/*CSS AYUDA*/
+
+.contenedor-ayuda{
+    
+}
+
+.titulo-preguntas{
+    
+}
+
+details{
+    
+}
+
+.ayuda-item{
+    
+}
+
+
+
+.ayuda-item summary{
+    
+}
+
+.ayuda-item p{
+    
+}
+
+
+
+
+
+
+
+
