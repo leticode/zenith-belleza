@@ -61,6 +61,39 @@ body, html{
     width: calc(100% - 100px);
 }
 
+form{
+    padding:50px 55px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2.0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form h2{
+    text-align: center;
+    font-size: 2.1875rem;
+}
+
+form a{
+    text-decoration: none;
+    color: #0a0a0a;
+    font-weight: 700;
+}
+
+label{
+    font-weight: 700;
+}
+
+.btn{
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: #8dbcb6;
+    border-color: #8dbcb6;
+}
+
 .footer{
     position: relative;
     width: 100%;
@@ -68,10 +101,17 @@ body, html{
 }
 
 .gradiente-footer{
+    position: absolute;
+    top: -300px;
+    z-index: -100;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient( to bottom, #fff, #8dbcb6);
     
 }
 
 .contenedor-footer{
+    background-color: #8DBCB6;
     font-size: 1.5rem;
 }
 
@@ -182,28 +222,40 @@ body, html{
 
 /* CSS RESERVAR */
 
+
+
 .contenedor-reservar{
-    
+    width: 80%;
+    margin: 3.125rem auto;
 }
 
 .formulario-reservar{
     
-}
-
-.formulario-reservar label{
     
 }
 
 .formulario-reservar input{
-    
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #d6ebe8;
+    border: 2px solid #d6ebe8;
+    color: #283629;
+}
+
+.formulario-reservar input:focus{
+    outline: none;
 }
 
 .formulario-reservar select{
-    
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #d6ebe8;
+    border: 2px solid #d6ebe8;
+    color: #283629;
 }
 
 .formulario-reservar select:focus{
-    
+    outline: none;
 }
 
 .input-txt{
@@ -211,15 +263,9 @@ body, html{
 }
 
 .input-txt a{
-    
-}
-
-.btn{
-    
-}
-
-.btn:hover{
-    
+    color: #0A0A0A;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* CSS CONTACTO*/
@@ -236,68 +282,79 @@ body, html{
     
 }
 
-.formulario-contacto label{
-    
-}
 
 .formulario-contacto input{
-    
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #d6ebe8;
+    border: 2px solid #d6ebe8;
+    color: #283629;
 }
 
 .formulario-contacto input:focus{
-    
+    outline: none;
 }
 
 .formulario-contacto select{
-    
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #d6ebe8;
+    border: 2px solid #d6ebe8;
+    color: #283629;
 }
 
-.formulario-contacto select:focus{
-    
+.formulario-reservar select:focus{
+    outline: none;
 }
 
 .formulario-contacto textarea{
-    
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #d6ebe8;
+    border: 2px solid #d6ebe8;
+    color: #283629;
 }
 
 .formulario-contacto textarea:focus{
-    
-}
-
-.btn{
-    
-}
-
-.btn:hover{
-    
+    outline: none;
 }
 
 /*CSS AYUDA*/
 
 .contenedor-ayuda{
-    
+    width: 100%;
 }
 
 .titulo-preguntas{
-    
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1.5rem 0;
 }
 
 details{
-    
+    background-color: #f0f4f3;
 }
 
 .ayuda-item{
-    
+    margin-bottom: 20px;
+    width: 80%;
 }
 
-
-
 .ayuda-item summary{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: #8dbcb6;
+    padding: 20px;
     
 }
 
 .ayuda-item p{
-    
+    font-size: .9rem;
+    text-align: left;
+    padding: 10px;
 }
 
 
