@@ -1,7 +1,12 @@
 /*CSS GENERAL*/
-body, html{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Playfair Display", serif;
 }
 
 .header{
@@ -55,7 +60,7 @@ body, html{
     position: relative;
     color: #fff;
     padding: 1.875rem .625rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -157,7 +162,8 @@ label{
 /* CSS INICIO */
 
 .contenedor-index{
-    width: 100%;
+    margin: 20px;
+    width: calc(100% - 20px - 20px);
 }
 
 .imagen-index img{
@@ -169,11 +175,16 @@ label{
 }
 
 .bloques-index{
+    width: 90%;
+    margin: 1.25rem 0;
+    padding: 1.25rem ;
     background-color: #8DBCB6;
 }
 
 .bloques-index h2{
+    padding-bottom: 1rem;
     font-size: 40px;
+    text-align: center;
 }
 
 .bloques-index p{
@@ -190,14 +201,14 @@ label{
 }
 
 .productos{
-    columns: 3 100%;
+    columns: 3 12.5rem;
 }
 
 .productos img {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 1.25rem;
+    margin: 1.25rem;
 }
 
 .contenido-productos{
@@ -207,16 +218,24 @@ label{
 }
 
 .opacidad{
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .contenedor-parrafo{
-    
+    position: absolute;
+    width: 100%;
     
 }
 
 .parrafo{
     text-align: center;
+    color: #0c3f39;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 
