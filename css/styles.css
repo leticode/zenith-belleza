@@ -20,7 +20,10 @@ body{
 }
 
 .contenedor-header{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .header-titulo{
@@ -29,18 +32,34 @@ body{
 
 .header-titulo h1{
     color: #8DBCB6;
+    font-size: 3rem;
 }
+
+.header-promocion p {
+    color: #a5d8d1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 
 .header-busqueda{
     
 }
 
 .header-busqueda input{
+    padding: 15px 90px 15px 3px;
+    border: none;
+    border-radius: 10px;
     
 }
 
 .header-busqueda input:focus{
     outline:none;
+}
+
+.header-titulo h1, .header-busqueda input {
+    margin: 20px 30px; 
 }
 
 .nav{
@@ -65,17 +84,10 @@ body{
 }
 
 .nav a::after{
-    content: "";
-    position: absolute;
-    background-color: #8dbcb6;
-    height: 3px;
-    width: 0;
-    left: 10px;
-    bottom: 20px;
-    transition: 0.3s;
+    
 }
 nav a:hover::after{
-    width: 80%;
+    
 }
 
 .contenedor-general{
