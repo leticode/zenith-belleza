@@ -20,9 +20,6 @@ body{
 }
 
 .contenedor-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 
@@ -213,7 +210,7 @@ label{
 }
 
 .productos{
-    columns: 3 12.5rem;
+    
 }
 
 .productos img {
