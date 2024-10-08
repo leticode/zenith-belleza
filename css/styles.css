@@ -20,6 +20,9 @@ body{
 }
 
 .contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -81,10 +84,18 @@ body{
 }
 
 .nav a::after{
+    content: '';
+    position: absolute;
+    background-color: #8DBCB6;
+    width: 0;
+    height: 3px;
+    left: 10px;
+    bottom: 20px;
+    transition: 0.3s;
     
 }
 nav a:hover::after{
-    
+    width: 80%;
 }
 
 .contenedor-general{
@@ -144,16 +155,20 @@ label{
 }
 
 .contenedor-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
     background-color: #8DBCB6;
     font-size: 1.5rem;
 }
 
 .redes-sociales{
-    
 }
 
 .facebook{
-    width: 25px;
+    padding-bottom: 15px;
+    
     
 }
 
@@ -163,6 +178,14 @@ label{
 
 .horarios{
     
+    
+}
+.horarios h5{
+    text-align: center;
+}
+
+.horarios p{
+    padding:10px;
 }
 
 
@@ -171,6 +194,8 @@ label{
 /* CSS INICIO */
 
 .contenedor-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 20px;
     width: calc(100% - 20px - 20px);
 }
@@ -180,6 +205,10 @@ label{
 }
 
 .contenido-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -210,20 +239,22 @@ label{
 }
 
 .productos{
-    
+    columns: 3 200px;
+    margin: 20px;
 }
 
 .productos img {
     width: 100%;
     height: auto;
     display: block;
-    margin: 1.25rem;
+    margin: 10px 0;
 }
 
 .contenido-productos{
     position: relative;
     width: 100%;
     height: 100%;
+    
 }
 
 .opacidad{
@@ -232,11 +263,18 @@ label{
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .contenedor-parrafo{
     position: absolute;
     width: 100%;
+    height: 170%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -245,6 +283,16 @@ label{
     color: #0c3f39;
     font-weight: 700;
     font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #8dbcb6; 
+}
+
+.contenido-productos:hover .opacidad{
+    opacity: 1;
+}
+.contenido-productos:hover .parrafo{
+    opacity: 1;
 }
 
 
@@ -252,7 +300,10 @@ label{
 /* CSS SERVICIOS */
 
 .contenedor-servicios{
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 20px;
 }
 
 .card{
@@ -266,7 +317,9 @@ label{
 }
 
 .card p{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parrafo-servicios{
@@ -280,11 +333,18 @@ label{
 
 .contenedor-reservar{
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 3.125rem auto;
 }
 
 .formulario-reservar{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     
 }
 
@@ -325,15 +385,23 @@ label{
 /* CSS CONTACTO*/
 
 .contenedor-contacto-ayuda{
-    
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.125rem auto;
 }
 
 .contendor-contacto{
-    
+
 }
 
 .formulario-contacto{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -377,6 +445,10 @@ label{
 
 .contenedor-ayuda{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .titulo-preguntas{
