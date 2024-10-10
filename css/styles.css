@@ -20,8 +20,9 @@ body{
 }
 
 .contenedor-header{
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -32,23 +33,23 @@ body{
 
 .header-titulo h1{
     color: #8DBCB6;
-    font-size: 3rem;
+    font-size: 1.7rem;
 }
 
 .header-promocion p {
     color: #a5d8d1;
-    font-size: 1.5rem;
+    font-size: .8rem;
     font-weight: 700;
     text-transform: uppercase;
+    display: none;
 }
 
 
 .header-busqueda{
-    
 }
 
 .header-busqueda input{
-    padding: 15px 90px 15px 3px;
+    padding: 10px 50px 10px 3px;
     border: none;
     border-radius: 10px;
     
@@ -59,71 +60,68 @@ body{
 }
 
 .header-titulo h1, .header-busqueda input {
-    margin: 20px 30px; 
+    margin: 5px 30px; 
 }
 
 .nav{
-    height: 100%;
-    width: 100px;
+    height: 50px;
+    width: 100%;
     position: fixed;
     z-index: 100;
-    top: 100px;
     left: 0;
+    bottom: 0;
     background-color: #0A0A0A;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .nav a{
     position: relative;
     color: #fff;
     padding: 1.875rem .625rem;
-    font-size: 1.2rem;
+    font-size: .8rem;
     text-decoration: none;
 }
 
 .nav a::after{
-    content: '';
-    position: absolute;
-    background-color: #8DBCB6;
-    width: 0;
-    height: 3px;
-    left: 10px;
-    bottom: 20px;
-    transition: 0.3s;
+    
+    
     
 }
 nav a:hover::after{
-    width: 80%;
+    
 }
 
 .contenedor-general{
     position: relative;
     top: 100px;
-    left: 100px;
-    width: calc(100% - 100px);
+    left: 0;
+    width: 100%;
 }
 
 form{
-    padding:50px 55px ;
+    padding: 50px 55px ;
     box-shadow: 0 0 20px rgba(0, 0, 0, 2.0);
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 form h2{
     text-align: center;
-    font-size: 2.1875rem;
+    font-size: 1.8rem;
 }
 
 form a{
     text-decoration: none;
     color: #0a0a0a;
     font-weight: 700;
+    font-size: .6rem;
 }
 
 label{
     font-weight: 700;
+    font-size: .9rem;
 }
 
 .btn{
@@ -131,6 +129,7 @@ label{
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 700;
+    font-size: .8rem;
 }
 
 .btn:hover{
@@ -156,6 +155,7 @@ label{
 
 .contenedor-footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 40px 0;
@@ -173,7 +173,7 @@ label{
 }
 
 .instagram{
-    
+    padding-bottom: 15px;
 }
 
 .horarios{
@@ -195,7 +195,7 @@ label{
 
 .contenedor-index{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 20px;
     width: calc(100% - 20px - 20px);
 }
@@ -239,7 +239,7 @@ label{
 }
 
 .productos{
-    columns: 3 200px;
+    columns: 1 200px;
     margin: 20px;
 }
 
@@ -263,9 +263,7 @@ label{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    background: rgba(0, 0, 0, 0.5);
+    
 }
 
 .contenedor-parrafo{
@@ -282,17 +280,14 @@ label{
     text-align: center;
     color: #0c3f39;
     font-weight: 700;
-    font-size: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: #8dbcb6; 
+    font-size: 1.5rem;;
 }
 
 .contenido-productos:hover .opacidad{
-    opacity: 1;
+    
 }
 .contenido-productos:hover .parrafo{
-    opacity: 1;
+    
 }
 
 
@@ -301,7 +296,7 @@ label{
 
 .contenedor-servicios{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin: 20px;
 }
@@ -385,15 +380,16 @@ label{
 /* CSS CONTACTO*/
 
 .contenedor-contacto-ayuda{
-    width: 80%;
+    width: 90%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 3.125rem auto;
 }
 
 .contendor-contacto{
-
+    width: 100%;
 }
 
 .formulario-contacto{
@@ -406,7 +402,7 @@ label{
 
 
 .formulario-contacto input{
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     background-color: #d6ebe8;
     border: 2px solid #d6ebe8;
@@ -465,7 +461,7 @@ details{
 
 .ayuda-item{
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 .ayuda-item summary{
@@ -482,6 +478,284 @@ details{
     text-align: left;
     padding: 10px;
 }
+
+
+
+/* MQ TABLET 768px*/
+
+@media (min-width:768px){
+    
+    .contenedor-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-titulo h1{
+        font-size: 1.6rem;
+    }
+    
+    .header-promocion p {
+        font-size: 1rem;
+        display: block;
+    }
+    
+    .header-busqueda input{
+        padding: 10px 60px 10px 3px;
+        
+    }
+    
+    .header-titulo h1, .header-busqueda input {
+        margin: 15px 20px; 
+    }
+    
+    .nav{
+        top: 100px;
+        height: 100%;
+        width: 100px;
+        flex-direction: column;
+    }
+    
+    .nav a{
+        font-size: 1rem;
+    }
+
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedor-general{
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+    
+    .productos{
+        columns: 2 200px;
+    }
+    
+    .parrafo{
+        font-size: 1.3rem;
+    }
+
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form h2{
+        font-size: 2.1875rem;
+    }
+
+    form a{
+        font-size: 1rem;
+    }
+
+    label{
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        font-size: .9rem;
+    }
+
+    .formulario-contacto input{
+        padding: 15px;
+    }
+
+    .formulario-contacto select{
+        padding: 15px;
+    }
+    
+    .formulario-contacto textarea{
+        padding: 15px;
+    }
+    
+}
+
+
+
+/* MQ LAPTOP 1024px*/
+
+@media (min-width:1024px){
+    
+    .contenedor-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-titulo h1{
+        font-size: 1.8rem;
+    }
+    
+    .header-promocion p {
+        font-size: 1.3rem;
+        display: block;
+    }
+    
+    .header-titulo h1, .header-busqueda input {
+        margin: 20px 30px; 
+    }
+    
+    .nav{
+        top: 100px;
+        height: 100%;
+        width: 100px;
+        flex-direction: column;
+    }
+
+    .nav a{
+        font-size: 1.2rem;
+    }
+
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedor-general{
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+    
+    .productos{
+        columns: 3 200px;
+    }
+    
+    .parrafo{
+        font-size: 1.4rem;
+    }
+
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .form h2{
+        font-size: 2.1875rem;
+    }
+
+    .contendor-contacto{
+        width: 75%;
+    }
+
+    .formulario-contacto input{
+        padding: 15px;
+    }
+
+    .formulario-contacto select{
+        padding: 15px;
+    }
+    
+    .formulario-contacto textarea{
+        padding: 15px;
+    }
+    
+    
+    
+    
+}
+
+/* MQ LAPTOPT 1440px */
+
+@media (min-width: 1440px ){
+    
+    .contenedor-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-titulo h1{
+        font-size: 3rem;
+    }
+    
+    .header-promocion p {
+        font-size: 1.5rem;
+        display: block;
+    }
+    .header-busqueda input{
+        padding: 15px 90px 15px 3px;
+        
+    }
+    
+    .nav{
+        top: 100px;
+        height: 100%;
+        width: 100px;
+        flex-direction: column;
+    }
+
+    .nav a{
+        font-size: 1.2rem;
+    }
+
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedor-general{
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+    
+    .contenedor-index{
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+    
+    .productos{
+        columns: 3 200px;
+    }
+    
+    .parrafo{
+        font-size: 1.5rem;
+    }
+
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .form h2{
+        font-size: 2.1875rem;
+    }
+
+    .contenedor-contacto-ayuda{
+        flex-direction: row;
+    }
+
+    .contendor-contacto{
+        width: 100%;
+    }
+
+    .formulario-contacto input{
+        padding: 15px;
+    }
+
+    .formulario-contacto select{
+        padding: 15px;
+    }
+    
+    .formulario-contacto textarea{
+        padding: 15px;
+    }
+
+    .ayuda-item{
+        width: 80%;
+    }
+    
+    
+}
+
+
+
+
 
 
 
