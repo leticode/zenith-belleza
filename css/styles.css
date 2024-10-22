@@ -91,12 +91,17 @@ body{
 }
 
 .nav a::after{
-    
-    
+    content: '';
+    position: absolute;
+    background-color: #8DBCB6;
+    width: 0;
+    height: 3px;
+    left: 10px;
+    bottom: 20px;
     
 }
 nav a:hover::after{
-    
+    width: 80%;
 }
 
 .contenedor-general{
@@ -205,9 +210,23 @@ label{
     width: calc(100% - 20px - 20px);
 }
 
-.imagen-index img{
-    width: 100%;
+.imagen-index{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30vh;
+    width: 100%; 
+    overflow: hidden; 
 }
+
+.imagen-index img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    object-fit: cover;
+}
+
 
 .contenido-index{
     display: flex;
@@ -307,6 +326,7 @@ label{
 }
 
 .card{
+    position: relative;
     background-color: #8DBCB6; 
     
 }
@@ -316,12 +336,13 @@ label{
     width: 100%;
 }
 
+
 .card p{
-    display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
     font-size: .9rem;
+    display: flex;
 }
 
 .parrafo-servicios{
@@ -526,17 +547,21 @@ details{
     .nav a{
         font-size: 1rem;
     }
-
+    
     .contenedor-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-
+    
     .contenedor-general{
         left: 100px;
         width: calc(100% - 100px);
+    }
+    
+    .imagen-index{
+        height: 50vh; 
     }
     
     .productos{
@@ -546,19 +571,19 @@ details{
     .parrafo{
         font-size: 1.3rem;
     }
-
+    
     .contenedor-servicios{
         grid-template-columns: 1fr 1fr;
     }
-
+    
     .form h2{
         font-size: 2.1875rem;
     }
-
+    
     form a{
         font-size: 1rem;
     }
-
+    
     label{
         font-size: 1.1rem;
     }
@@ -566,11 +591,11 @@ details{
     .btn{
         font-size: .9rem;
     }
-
+    
     .formulario-contacto input{
         padding: 15px;
     }
-
+    
     .formulario-contacto select{
         padding: 15px;
     }
@@ -612,21 +637,25 @@ details{
         width: 100px;
         flex-direction: column;
     }
-
+    
     .nav a{
         font-size: 1.2rem;
     }
-
+    
     .contenedor-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-
+    
     .contenedor-general{
         left: 100px;
         width: calc(100% - 100px);
+    }
+    
+    .imagen-index{
+        height: 60vh; 
     }
     
     .productos{
@@ -636,23 +665,23 @@ details{
     .parrafo{
         font-size: 1.4rem;
     }
-
+    
     .contenedor-servicios{
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    
     .form h2{
         font-size: 2.1875rem;
     }
-
+    
     .contendor-contacto{
         width: 75%;
     }
-
+    
     .formulario-contacto input{
         padding: 15px;
     }
-
+    
     .formulario-contacto select{
         padding: 15px;
     }
@@ -695,26 +724,32 @@ details{
         width: 100px;
         flex-direction: column;
     }
-
+    
     .nav a{
         font-size: 1.2rem;
     }
-
+    
     .contenedor-footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-
+    
     .contenedor-general{
         left: 100px;
         width: calc(100% - 100px);
     }
     
     .contenedor-index{
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 20px;
+    }
+    
+    .imagen-index{
+        height: 70vh;
     }
     
     .productos{
@@ -724,27 +759,27 @@ details{
     .parrafo{
         font-size: 1.5rem;
     }
-
+    
     .contenedor-servicios{
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    
     .form h2{
         font-size: 2.1875rem;
     }
-
+    
     .contenedor-contacto-ayuda{
         flex-direction: row;
     }
-
+    
     .contendor-contacto{
         width: 100%;
     }
-
+    
     .formulario-contacto input{
         padding: 15px;
     }
-
+    
     .formulario-contacto select{
         padding: 15px;
     }
@@ -752,7 +787,7 @@ details{
     .formulario-contacto textarea{
         padding: 15px;
     }
-
+    
     .ayuda-item{
         width: 80%;
     }
