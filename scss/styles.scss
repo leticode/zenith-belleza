@@ -281,7 +281,7 @@ label{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
     background: rgba(0, 0, 0, 0.5);
     
@@ -647,6 +647,9 @@ details{
                 opacity: 1;
             }
         }
+    }
+    .opacidad{
+        opacity: 0;
     }
     .productos{
         columns: 3 200px;
