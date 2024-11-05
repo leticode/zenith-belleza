@@ -1,0 +1,45 @@
+
+.contenedor-reservar{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.125rem auto;
+}
+
+.formulario-reservar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    input{
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #d6ebe8;
+        border: 2px solid #d6ebe8;
+        color: #283629;
+    }
+    input:focus{
+        outline: none;
+    }
+    select{
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #d6ebe8;
+        border: 2px solid #d6ebe8;
+        color: #283629;
+    }
+    select:focus{
+        outline: none;
+    }
+    
+}
+
+.input-txt{
+    a{
+        color: #0A0A0A;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}

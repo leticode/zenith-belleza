@@ -1,4 +1,3 @@
-/*CSS GENERAL*/
 * {
   margin: 0;
   padding: 0;
@@ -95,39 +94,6 @@ body {
   width: 100%;
 }
 
-form {
-  padding: 50px 55px;
-  box-shadow: 0 0 20px rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.1);
-}
-form h2 {
-  text-align: center;
-  font-size: 1.8rem;
-}
-form a {
-  text-decoration: none;
-  color: #0a0a0a;
-  font-weight: 700;
-  font-size: 0.6rem;
-}
-
-label {
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-
-.btn {
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 0.8rem;
-}
-.btn:hover {
-  background-color: #8dbcb6;
-  border-color: #8dbcb6;
-}
-
 .footer {
   position: relative;
   width: 100%;
@@ -167,7 +133,39 @@ label {
   padding: 10px;
 }
 
-/* CSS INICIO */
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.btn:hover {
+  background-color: #8dbcb6;
+  border-color: #8dbcb6;
+}
+
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+form h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+form a {
+  text-decoration: none;
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
 .contenedor-index {
   display: grid;
   grid-template-columns: 1fr;
@@ -302,7 +300,6 @@ label {
   transition: opacity 0.3s ease;
 }
 
-/* CSS SERVICIOS */
 .contenedor-servicios {
   display: grid;
   grid-template-columns: 1fr;
@@ -328,7 +325,6 @@ label {
   padding: 10px 0;
 }
 
-/* CSS RESERVAR */
 .contenedor-reservar {
   width: 80%;
   display: flex;
@@ -371,7 +367,43 @@ label {
   text-decoration: none;
 }
 
-/* CSS CONTACTO*/
+.contenedor-ayuda {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-preguntas {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+details {
+  background-color: #f0f4f3;
+}
+
+.ayuda-item {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.ayuda-item summary {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #8dbcb6;
+  padding: 20px;
+}
+.ayuda-item p {
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 10px;
+}
+
 .contenedor-contacto-ayuda {
   width: 90%;
   display: flex;
@@ -422,44 +454,6 @@ label {
 }
 .formulario-contacto textarea:focus {
   outline: none;
-}
-
-/*CSS AYUDA*/
-.contenedor-ayuda {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.titulo-preguntas {
-  font-size: 1.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 1.5rem 0;
-}
-
-details {
-  background-color: #f0f4f3;
-}
-
-.ayuda-item {
-  margin-bottom: 20px;
-  width: 100%;
-}
-.ayuda-item summary {
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 700;
-  background-color: #8dbcb6;
-  padding: 20px;
-}
-.ayuda-item p {
-  font-size: 0.9rem;
-  text-align: left;
-  padding: 10px;
 }
 
 /* MQ TABLET 768px*/

@@ -1,0 +1,38 @@
+.nav{
+    ul{
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        bottom: 0;
+        background-color: #0A0A0A;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    li{
+        position: relative;
+        padding: 1.875rem .625rem;
+        font-size: .7rem;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    a::after{
+        content: '';
+        position: absolute;
+        background-color: #8DBCB6;
+        width: 0;
+        height: 3px;
+        left: 10px;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+    a:hover::after{
+        width: 80%;
+    }
+}

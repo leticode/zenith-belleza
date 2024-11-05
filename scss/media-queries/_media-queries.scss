@@ -1,0 +1,327 @@
+/* MQ TABLET 768px*/
+
+@media (min-width:768px){
+    
+    .contenedor-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-titulo{
+        h1{
+            font-size: 1.6rem;
+            margin: 15px 20px; 
+        }
+    }
+    
+    .header-promocion{
+        p{
+            font-size: 1rem;
+            display: block;
+        }
+    }
+    
+    .header-busqueda{
+        input{
+            padding: 10px 60px 10px 3px;
+            margin: 15px 20px; 
+        }
+    }
+    
+    .nav{
+        ul{
+            top: 100px;
+            height: 100%;
+            width: 100px;
+            flex-direction: column;
+        }
+        a{
+            font-size: 1rem;
+        }
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contenedor-general{
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+    
+    .imagen-index{
+        height: 50vh; 
+    }
+    
+    .productos{
+        columns: 2 200px;
+    }
+    
+    .parrafo{
+        font-size: 1.3rem;
+        opacity: 1;
+    }
+    
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .form{
+        h2{
+            font-size: 2.1875rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+    }
+    
+    label{
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        font-size: .9rem;
+    }
+    
+    .formulario-contacto{
+        input{
+            padding: 15px;
+        }
+        select{
+            padding: 15px;
+        }
+        textarea{
+            padding: 15px;
+        }
+    }
+    
+}
+/* MQ LAPTOP 1024px*/
+
+@media (min-width:1024px){
+    
+    .contenedor-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-titulo{
+        h1{
+            font-size: 1.8rem;
+            margin: 20px 30px; 
+        }
+    }
+    
+    .header-promocion{
+        p{
+            font-size: 1.3rem;
+            display: block;
+        }
+    }
+    
+    .header-busqueda{
+        input{
+            margin: 20px 30px; 
+        }
+    }
+    
+    .nav{
+        ul{
+            top: 100px;
+            height: 100%;
+            width: 100px;
+            flex-direction: column;
+        }
+        a{
+            font-size: 1.2rem;
+        }
+    }
+    
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contenedor-general{
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+    
+    .imagen-index{
+        height: 60vh; 
+    }
+
+    .productos{
+        columns: 3 200px;
+    }
+
+    .contenido-productos{
+        &:hover {
+            .opacidad {
+                opacity: 1;
+            }
+            .parrafo {
+                opacity: 1;
+            }
+        }
+    }
+    
+    .parrafo{
+        font-size: 1.4rem;
+        opacity: 0;
+    }
+    
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .form{
+        h2{
+            font-size: 2.1875rem;
+        }
+    }
+    
+    .contendor-contacto{
+        width: 75%;
+    }
+    
+    .formulario-contacto{
+        input{
+            padding: 15px;
+        }
+        select{
+            padding: 15px;
+        }
+        textarea{
+            padding: 15px;
+        }
+    }
+}
+
+/* MQ LAPTOPT 1440px */
+
+@media (min-width: 1440px ){
+    
+    .contenedor-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-titulo{
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+    .header-promocion{
+        p{
+            font-size: 1.5rem;
+            display: block;
+        }
+    }
+
+    .header-busqueda{
+        input{
+            padding: 15px 90px 15px 3px;
+        }
+    }
+
+    .nav{
+        ul{
+            
+            top: 100px;
+            height: 100%;
+            width: 100px;
+            flex-direction: column;
+        }
+        a{
+            font-size: 1.2rem;
+        }
+    }
+
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contenedor-general{
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+    
+    .contenedor-index{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .imagen-index{
+        height: 70vh;
+    }
+
+    .productos{
+        columns: 3 200px;
+    }
+
+    .contenido-productos{
+        &:hover {
+            .opacidad {
+                opacity: 1;
+            }
+            .parrafo {
+                opacity: 1;
+            }
+        }
+    }
+    .parrafo{
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+    
+    .contenedor-servicios{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .form{
+        h2{
+            font-size: 2.1875rem;
+        }
+    }
+
+    .contenedor-contacto-ayuda{
+        flex-direction: row;
+    }
+    
+    .contendor-contacto{
+        width: 100%;
+    }
+
+    .formulario-contacto{
+        input{
+            padding: 15px;
+        }
+        select{
+            padding: 15px;
+        }
+        textarea{
+            padding: 15px;
+        }
+    }
+
+    .ayuda-item{
+        width: 80%;
+    }
+}
+
+
+

@@ -1,0 +1,12 @@
+
+.btn{
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .8rem;
+    &:hover{
+        background-color: #8dbcb6;
+        border-color: #8dbcb6;
+    }
+}

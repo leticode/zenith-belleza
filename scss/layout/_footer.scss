@@ -1,0 +1,49 @@
+.footer{
+    position: relative;
+    width: 100%;
+    
+}
+
+.gradiente-footer{
+    position: absolute;
+    top: -300px;
+    z-index: -100;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient( to bottom, #fff, #8dbcb6);
+    
+}
+
+
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #8DBCB6;
+    font-size: 1.5rem;
+}
+
+.redes-sociales{
+}
+
+.facebook{
+    padding-bottom: 15px;
+    
+    
+}
+
+.instagram{
+    padding-bottom: 15px;
+}
+
+.horarios{
+    h5{
+        text-align: center;
+    }
+    p{
+        padding:10px;
+    }
+    
+}
