@@ -1,5 +1,5 @@
 //BASE
-@use "base/reset.scss";
+@use "base/reset";
 
 //LAYOUT
 @use "layout/header";
@@ -8,15 +8,19 @@
 @use "layout/footer";
 
 //COMPONENTS
-@use "components/buttons.scss";
-@use "components/forms.scss";
-@use "components/images.scss";
+@use "components/buttons";
+@use "components/forms";
+@use "components/images";
 @use "components/index";
 @use "components/productos";
 @use "components/servicios";
 @use "components/reservar";
 @use "components/ayuda";
 @use "components/contacto";
+
+//UTILITIES
+@use "./utilities/mixins";
+@use "./utilities/maps";
 
 //MEDIA QUERIES
 @use "media-queries/media-queries";
