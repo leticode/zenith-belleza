@@ -1,4 +1,4 @@
-
+@use "../utilities/variables";
 .contenedor-index{
     display: grid;
     grid-template-columns: 1fr;
@@ -52,7 +52,7 @@
     width: 90%;
     margin: 1.25rem 0;
     padding: 1.25rem ;
-    background-color: #8DBCB6;
+    background-color: variables.$color-card;
     h2{
         padding-bottom: 1rem;
         font-size: 40px;
