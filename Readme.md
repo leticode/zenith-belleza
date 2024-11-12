@@ -9,7 +9,8 @@ Además de los servicios en el centro, contamos con una selección de productos 
 - **Variedad de Tratamientos**: Zenith Belleza ofrece una gama completa de servicios de belleza y estética, incluyendo tratamientos faciales, masajes relajantes, cuidado corporal, y más, adaptados a las necesidades de cada cliente.
 - **Catálogo de Productos**: Contamos con una selección de productos de alta calidad para el cuidado en casa, especialmente elegidos para complementar los tratamientos realizados en el centro.
 - **Sistema de Reservas**: Ofrecemos la posibilidad de reservar citas y tratamientos de manera fácil y rápida en línea.
-- **Información Detallada de Servicios**: Cada tratamiento cuenta con una descripción detallada de sus beneficios y recomendaciones para asegurar la mejor experiencia para el cliente.
+- **Atención Personalizada**: Nuestro equipo está comprometido a brindar una atención excepcional, escuchando las necesidades de cada cliente para ofrecer tratamientos adaptados a sus objetivos y asegurando su satisfacción en todo momento.
+
 
 ## Tecnologías Usadas
 
@@ -17,5 +18,5 @@ Además de los servicios en el centro, contamos con una selección de productos 
   **CSS**
   **SASS**
 
-  
+
 
