@@ -12,11 +12,7 @@
 }
 
 .formulario-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    @extend .formulario-reservar;
     margin: 50px 0;
     input{
         padding: 10px;
